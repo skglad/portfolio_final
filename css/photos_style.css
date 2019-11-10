@@ -1,0 +1,102 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+  background-color: #9E9BBF;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+h1{
+  font-size: 32px;
+}
+h2{
+  font-size: 26px;
+}
+.container{
+  display: grid;
+  grid-template-columns: 50px 300px 300px 300px 50px;
+  grid-template-rows: 100px auto auto auto auto auto 100px;
+  grid-row-gap: 15px;
+  width: 100vw;
+}
+.nav{
+   display: inline;
+   grid-column-start: 1;
+   grid-column-end: -1;
+   grid-row-start: 1;
+   grid-row-end: 2;
+  background-color: #9E9BBF;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: left;
+  align-self: center;
+}
+nav ul{
+  list-style-type: none;
+}
+nav li{
+  display: inline;
+  padding-right: 20px;
+}
+nav a{
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+nav a:hover{
+  text-decoration: underline;
+}
+img {
+  border: 1px solid #ddd; /* Gray border */
+  border-radius: 4px;  /* Rounded border */
+  padding: 5px; /* Some padding */
+  width: 150px;
+  height: 150px;/* Set a small width */
+}
+
+/* Add a hover effect (blue shadow) */
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+.text-block{
+  font-size: 14px;
+  align-self: center;
+  text-align: center;
+  background-color: rgba(255, 255, 255, .8);
+  border: 5px solid black;
+  padding: 30px;
+}
+.title{
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.madrid{
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.spain{
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+.islands{
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+footer{
+  background-color: black;
+  color: white;
+  grid-column: 1 / -1;  /*Can you explain what this does? yes this places the footer across all columns in the grid*/
+  grid-row: 6 / 7;   /*Can you rewrite it? yes, this can be written in different ways depending on how you write the code, updated with another version*/
+  padding-top: 30px;
+  text-align: center;
+  margin-bottom: 0px;
+}

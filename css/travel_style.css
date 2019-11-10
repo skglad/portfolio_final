@@ -1,0 +1,342 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+  background-color: #9E9BBF;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+.container{
+  display: grid;
+  grid-template-columns: 100px auto auto 100px;
+  grid-template-rows: 30px auto auto auto auto auto auto auto 100px;
+  grid-row-gap: 5px;
+  width: 100vw;
+  padding: 15px;
+}
+.nav{
+   /*Your code here */
+   display: inline;
+   grid-column-start: 1;
+   grid-column-end: -1;
+   grid-row-start: 1;
+   grid-row-end: 2;
+  background-color: #9E9BBF;
+  text-align: left;
+  align-self: center;
+}
+nav ul{
+  list-style-type: none;
+}
+nav li{
+  display: inline;
+  padding-right: 20px;
+}
+nav a{
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+nav a:hover{
+  text-decoration: underline;
+}
+.nav .current{
+  color: white;
+}
+header{
+  font-size: 38px;
+  align-self: center;
+  text-align: center;
+  background-color: rgba(255, 255, 255, .8);
+  border: 5px solid black;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+header h1{
+  color: black;
+  font-size: 30px;
+  text-align: center;
+}
+header h2{
+  display: inline-block;
+  color: black;
+  font-size: 24px;
+  vertical-align: bottom;
+}
+.title{
+  text-align: center;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.title-block{
+  font-size: 18px;
+  align-self: center;
+  text-align: center;
+  background-color: rgba(255, 255, 255, .8);
+  border: 5px solid black;
+  padding: 5px;
+}
+.title-block p{
+  font-size: 16px;
+}
+.text-block{
+  font-size: 24px;
+  align-self: center;
+  text-align: center;
+  background-color: rgba(255, 255, 255, .8);
+  border: 5px solid black;
+  padding: 30px;
+}
+.travel{
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+.travel li{
+  font-size: 18px;
+  font-style: oblique;
+  text-align: left;
+}
+.travel p{
+  font-size: 14px;
+  text-align: left;
+}
+.airport{
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+.airport li{
+  font-size: 18px;
+  font-style: oblique;
+  text-align: left;
+}
+.airport p{
+  font-size: 14px;
+  text-align: left;
+}
+.accomos{
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+.accomos li{
+  font-size: 18px;
+  font-style: oblique;
+  text-align: left;
+}
+.accomos p{
+  font-size: 14px;
+  text-align: left;
+}
+.transpo{
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row-start: 7;
+  grid-row-end: 8;
+}
+.transpo{
+  font-size: 14px;
+}
+footer{
+  background-color: black;
+  color: white;
+  grid-column: 1 / -1;
+  grid-row: -1;
+  padding-top: 30px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+
+@media screen and (min-width: 800px){
+.container{
+  display: grid;
+  grid-template-columns: 100px auto auto auto auto 100px;
+  grid-template-rows: 100px auto auto auto auto auto auto 100px;
+  grid-row-gap: 5px;
+  width: 100vw;
+}
+.nav{
+   display: inline;
+   grid-column-start: 1;
+   grid-column-end: -1;
+   grid-row-start: 1;
+   grid-row-end: 2;
+  background-color: #9E9BBF;
+  text-align: left;
+  align-self: center;
+}
+nav ul{
+  list-style-type: none;
+}
+nav li{
+  display: inline;
+  padding-right: 20px;
+}
+nav a{
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+nav a:hover{
+  text-decoration: underline;
+}
+h1{
+  font-size: 24px;
+}
+h2{
+  font-size: 22px;
+}
+header{
+  font-size: 38px;
+  align-self: center;
+  text-align: center;
+  background-color: rgba(255, 255, 255, .8);
+  border: 5px solid black;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+header h1{
+  color: black;
+  font-size: 50px;
+  text-align: center;
+}
+header h2{
+  display: inline-block;
+  color: black;
+  font-size: 24px;
+  vertical-align: bottom;
+}
+.title{
+  text-align: center;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.title-block{
+  font-size: 30px;
+  align-self: center;
+  text-align: center;
+  background-color: rgba(255, 255, 255, .8);
+  border: 5px solid black;
+  padding: 5px;
+}
+.title-block p{
+  font-size: 16px;
+}
+.text-block{
+  font-size: 24px;
+  align-self: center;
+  text-align: center;
+  background-color: rgba(255, 255, 255, .8);
+  border: 5px solid black;
+  padding: 30px;
+}
+.travel{
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+.travel li{
+  font-size: 18px;
+  font-style: oblique;
+  text-align: left;
+}
+.travel p{
+  font-size: 14px;
+  text-align: left;
+}
+.airport{
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+.airport li{
+  font-size: 18px;
+  font-style: oblique;
+  text-align: left;
+}
+.airport p{
+  font-size: 14px;
+  text-align: left;
+}
+.accomos{
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+.accomos li{
+  font-size: 18px;
+  font-style: oblique;
+  text-align: left;
+}
+.accomos p{
+  font-size: 14px;
+  text-align: left;
+}
+.transpo{
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 7;
+  grid-row-end: 8;
+}
+.transpo{
+  font-size: 14px;
+}
+footer{
+  background-color: black;
+  color: white;
+  grid-column: 1 / -1;
+  grid-row: -1;
+  padding-top: 30px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+@media screen and (min-width: 1020px){
+  .nav{
+     display: inline;
+     grid-column-start: 1;
+     grid-column-end: -1;
+     grid-row-start: 1;
+     grid-row-end: 2;
+    background-color: #9E9BBF;
+    text-align: right;
+    align-self: center;
+  }
+  @media screen and (prefers-reduced-motion: reduce){
+    html{
+        scroll-behavior: auto; /* Removes scroll animation */
+    }
+
+    .skip a{
+      background: white;
+      left: 0;
+      padding: 6px;
+      position: absolute;
+      top: -40px;
+      -webkit-transition: none; /* Your code here - set to default setting */
+      transition: none; /* Your code here - set to default setting */
+      z-index: 1;
+    }
+
+    .skip a:focus{
+      top:0;
+    }
+  }

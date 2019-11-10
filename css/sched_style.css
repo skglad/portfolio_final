@@ -1,0 +1,525 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+  background-color: #9E9BBF;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+h1{
+  font-size: 30px;
+}
+h2{
+  font-size: 24px;
+}
+h3{
+  font-size: 24px;
+}
+.container{
+  display: grid;
+  grid-template-columns: 100px auto auto 100px;
+  grid-template-rows: 30px auto auto auto auto auto auto auto 100px;
+  grid-row-gap: 5px;
+  width: 100vw;
+  padding: 15px;
+}
+.nav{
+   display: inline;
+   grid-column-start: 1;
+   grid-column-end: -1;
+   grid-row-start: 1;
+   grid-row-end: 2;
+  background-color: #9E9BBF;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: left;
+  align-self: center;
+}
+nav ul{
+  list-style-type: none;
+}
+nav li{
+  display: inline;
+  padding-right: 20px;
+}
+nav a{
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+nav a:hover{
+  text-decoration: underline;
+}
+.nav .current{
+  color: white;
+}
+header{
+  font-size: 38px;
+  align-self: center;
+  text-align: center;
+  background-color: rgba(255, 255, 255, .8);
+  border: 5px solid black;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+header h1{
+  color: black;
+  font-size: 50px;
+  text-align: center;
+}
+header h2{
+  display: inline-block;
+  color: black;
+  font-size: 24px;
+  vertical-align: bottom;
+}
+.text-block{
+  font-size: 24px;
+  align-self: center;
+  text-align: center;
+  background-color: rgba(255, 255, 255, .8);
+  border: 5px solid black;
+  padding: 30px;
+}
+.text-block p{
+  font-size: 18px;
+}
+.text-block h2{
+  font-size: 20px;
+}
+.title{
+  text-align: center;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.pre-image{
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  justify-self: center;
+  padding: 10px;
+}
+.pre{
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+.ceremony-image{
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  justify-self: center;
+  padding: 10px;
+}
+.ceremony{
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+.fiesta-image{
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row-start: 6;
+  grid-row-end: 7;
+  justify-self: center;
+  padding: 10px;
+}
+.fiesta{
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+.brunch-image{
+  grid-column-start: 1;
+  grid-column-end:-1;
+  grid-row-start: 7;
+  grid-row-end: 8;
+  justify-self: center;
+  padding: 10px;
+}
+.brunch{
+  grid-column-start:2;
+  grid-column-end: 4;
+  grid-row-start: 7;
+  grid-row-end: 8;
+}
+.rsvp{
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 8;
+  grid-row-end: 9;
+}
+.rsvp h1{
+  font-size: 26px;
+}
+.rsvp li{
+  text-align: left;
+  font-size: 18px;
+}
+.rsvp p{
+  font-size: 18px;
+}
+footer{
+  background-color: black;
+  color: white;
+  grid-column: 1 / -1;
+  grid-row: -1;
+  padding-top: 30px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+
+
+@media screen and (min-width: 800px){
+.container{
+  display: grid;
+  grid-template-columns: 150px auto auto auto 150px;
+  grid-template-rows: 100px auto auto auto auto auto auto auto 100px;
+  grid-row-gap: 15px;
+  width: 100vw;
+}
+.nav{
+   display: inline;
+   grid-column-start: 1;
+   grid-column-end: -1;
+   grid-row-start: 1;
+   grid-row-end: 2;
+  background-color: #9E9BBF;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: left;
+  align-self: center;
+}
+nav ul{
+  list-style-type: none;
+}
+nav li{
+  display: inline;
+  padding-right: 20px;
+}
+nav a{
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover{
+  text-decoration: underline;
+}
+header{
+  font-size: 38px;
+  align-self: center;
+  text-align: center;
+  background-color: rgba(255, 255, 255, .8);
+  border: 5px solid black;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.title{
+  text-align: center;
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.title-block{
+  font-size: 30px;
+  align-self: center;
+  text-align: center;
+  background-color: rgba(255, 255, 255, .8);
+  border: 5px solid black;
+  padding: 5px;
+}
+.pre-image{
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  justify-self: left;
+}
+.pre{
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  padding-right: 15px;
+}
+.text-block{
+  font-size: 24px;
+  align-self: center;
+  text-align: center;
+  background-color: rgba(255, 255, 255, .8);
+  /* background-image: url("../images/PEZ-TORTILLA-En-La-Latina.jpg"); */
+  border: 5px solid black;
+  padding: 30px;
+}
+.text-block p{
+  font-size: 14px;
+}
+.text-block h2{
+  font-size: 20px;
+}
+.ceremony-image{
+  grid-column-start: -1;
+  grid-column-end: -4;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  justify-self: right;
+
+}
+.ceremony{
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+.fiesta-image{
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 6;
+  grid-row-end: 7;
+  justify-self: left;
+}
+.fiesta{
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+.brunch-image{
+  grid-column-start: -1;
+  grid-column-end:-4;
+  grid-row-start: 7;
+  grid-row-end: 8;
+  justify-self: right;
+}
+.brunch{
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 7;
+  grid-row-end: 8;
+}
+.rsvp{
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row-start: 8;
+  grid-row-end: 9;
+}
+.rsvp h1{
+  font-size: 26px;
+
+}
+.rsvp li{
+  text-align: left;
+  font-size: 18px;
+}
+.rsvp p{
+  font-size: 18px;
+}
+footer{
+  background-color: black;
+  color: white;
+  grid-column: 1 / -1;  /*Can you explain what this does? yes this places the footer across all columns in the grid*/
+  grid-row: -1;   /*Can you rewrite it? yes, this can be written in different ways depending on how you write the code, updated with another version*/
+  padding-top: 30px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+
+
+@media screen and (min-width: 1020px){
+.container{
+  display: grid;
+  grid-template-columns: 150px auto auto auto 150px;
+  grid-template-rows: 100px auto auto auto auto auto auto auto 100px;
+  grid-row-gap: 15px;
+  width: 100vw;
+}
+.nav{
+   display: inline;
+   grid-column-start: 1;
+   grid-column-end: -1;
+   grid-row-start: 1;
+   grid-row-end: 2;
+  background-color: #9E9BBF;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: right;
+  align-self: center;
+}
+nav ul{
+  list-style-type: none;
+}
+nav li{
+  display: inline;
+  padding-right: 20px;
+}
+nav a{
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover{
+  text-decoration: underline;
+}
+header{
+  font-size: 38px;
+  align-self: center;
+  text-align: center;
+  background-color: rgba(255, 255, 255, .8);
+  border: 5px solid black;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.title{
+  text-align: center;
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.title-block{
+  font-size: 30px;
+  align-self: center;
+  text-align: center;
+  background-color: rgba(255, 255, 255, .8);
+  border: 5px solid black;
+  padding: 5px;
+}
+.pre-image{
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  justify-self: left;
+}
+.pre{
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  padding-right: 15px;
+  background-image
+}
+.text-block{
+  font-size: 24px;
+  align-self: center;
+  text-align: center;
+  background-color: rgba(255, 255, 255, .8);
+  /* background-image: url("../images/PEZ-TORTILLA-En-La-Latina.jpg"); */
+  border: 5px solid black;
+  padding: 30px;
+}
+.text-block p{
+  font-size: 14px;
+}
+.text-block h2{
+  font-size: 20px;
+}
+.ceremony-image{
+  grid-column-start: -1;
+  grid-column-end: -3;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  max-height: 300px;
+  overflow: hidden;
+  justify-self: right;
+}
+.ceremony{
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+.fiesta-image{
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 6;
+  grid-row-end: 7;
+  justify-self: left;
+}
+.fiesta{
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+.brunch-image{
+  grid-column-start: -1;
+  grid-column-end: -3;
+  grid-row-start: 7;
+  grid-row-end: 8;
+  max-height: 300px;
+  overflow: hidden;
+  justify-self: right;
+}
+.brunch{
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 7;
+  grid-row-end: 8;
+}
+.rsvp{
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row-start: 8;
+  grid-row-end: 9;
+}
+.rsvp h1{
+  font-size: 26px;
+
+}
+.rsvp li{
+  text-align: left;
+  font-size: 18px;
+}
+.rsvp p{
+  font-size: 18px;
+}
+footer{
+  background-color: black;
+  color: white;
+  grid-column: 1 / -1;  /*Can you explain what this does? yes this places the footer across all columns in the grid*/
+  grid-row: -1;   /*Can you rewrite it? yes, this can be written in different ways depending on how you write the code, updated with another version*/
+  padding-top: 30px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+      scroll-behavior: auto; /* Removes scroll animation */
+  }
+
+  .skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: none; /* Your code here - set to default setting */
+    transition: none; /* Your code here - set to default setting */
+    z-index: 1;
+  }
+
+  .skip a:focus{
+    top:0;
+  }
+}
