@@ -107,94 +107,7 @@ footer{
   margin-bottom: 0px;
 }
 
-@media screen and (prefers-reduced-motion: reduce){
-  html{
-      scroll-behavior: auto;
-  }
 
-  .skip a{
-    background: white;
-    left: 0;
-    padding: 6px;
-    position: absolute;
-    top: -40px;
-    -webkit-transition: none;
-    transition: none;
-    z-index: 1;
-  }
-
-  .skip a:focus{
-    top:0;
-  }
-  .hide{
-    display: none;
-  }
-  .heading{
-    padding: 15px;
-  }
-  header{
-    font-size: 50px;
-    background-color: rgba(255, 255, 255, .8);
-    border: 5px solid black;
-  }
-  header h1{
-    color: black;
-    font-size: 50px;
-    text-align: center;
-    align-self: center;
-    padding: 0px;
-  }
-  img{
-    display: block;
-    margin:auto;
-    width: auto;
-    max-height: 400px;
-    overflow: hidden;
-    border: 2px solid black;
-    align-content: center;
-  }
-  .text-block{
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-  }
-  .text-block h1{
-    font-size: 22px;
-  }
-  .text-block h2{
-    font-size: 18px;
-  }
-  .title{
-    font-size: 18px;
-    text-align: center;
-  }
-  .title h1{
-    font-size: 18px;
-  }
-  .title h2{
-    font-size: 14px;
-  }
-  .title p{
-    font-size: 14px;
-  }
-  .theback h1{
-    font-size: 18px;
-  }
-  .theback p{
-    font-size: 14px;
-  }
-  .container{
-    display: inline;
-  }
-  footer{
-    background-color: black;
-    color: white;
-    padding-top: 30px;
-    text-align: center;
-    margin-bottom: 0px;
-  }
-
-}
 
 
 
@@ -292,10 +205,7 @@ footer{
 
 
 @media screen and (min-width: 1020px){
-  .hide{
-      display: inline;
-    }
-    .nav{
+  .nav{
      display: inline;
     background-color: #F0F0F0;
     padding-top: 20px;
@@ -313,4 +223,90 @@ footer{
 img{
   width: 100%;
   overflow: hidden;
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+      scroll-behavior: auto;
+  }
+  .skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: none;
+    transition: none;
+    z-index: 1;
+  }
+
+  .skip a:focus{
+    top:0;
+  }
+
+  .heading{
+    padding: 15px;
+  }
+  header{
+    font-size: 50px;
+    background-color: rgba(255, 255, 255, .8);
+    border: 5px solid black;
+  }
+  header h1{
+    color: black;
+    font-size: 50px;
+    text-align: center;
+    align-self: center;
+    padding: 0px;
+  }
+  img{
+    display: block;
+    margin:auto;
+    width: auto;
+    max-height: 400px;
+    overflow: hidden;
+    border: 2px solid black;
+    align-content: center;
+  }
+  .text-block{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .text-block h1{
+    font-size: 22px;
+  }
+  .text-block h2{
+    font-size: 18px;
+  }
+  .title{
+    font-size: 18px;
+    text-align: center;
+  }
+  .title h1{
+    font-size: 18px;
+  }
+  .title h2{
+    font-size: 14px;
+  }
+  .title p{
+    font-size: 14px;
+  }
+  .theback h1{
+    font-size: 18px;
+  }
+  .theback p{
+    font-size: 14px;
+  }
+  .container{
+    display: inline;
+  }
+  footer{
+    background-color: black;
+    color: white;
+    padding-top: 30px;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+
 }
