@@ -2,8 +2,11 @@
 html{
     scroll-behavior: smooth;
 }
+.skip{
+  margin-top: -20px;
+}
 body{
-  background-color: #9E9BBF;
+  background-color: #F0F0F0;
   font-size: 18px;
   margin: 0;
   padding: 0;
@@ -13,7 +16,7 @@ nav{
 }
 .nav{
   display: inline;
- background-color: #9E9BBF;
+ background-color: #F0F0F0;
  text-align: left;
  align-self: center;
 }
@@ -34,7 +37,7 @@ nav a:hover{
   text-decoration: underline;
 }
 .nav .current{
-  color: white;
+border: 2px dashed black;
 }
 .hide{
   display: none;
@@ -207,7 +210,7 @@ footer{
 }
   .nav{
      display: inline;
-    background-color: #9E9BBF;
+    background-color: #F0F0F0;
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: right;

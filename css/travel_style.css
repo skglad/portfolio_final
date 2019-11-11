@@ -1,9 +1,11 @@
 html{
     scroll-behavior: smooth;
 }
-
+.skip{
+  margin-top: -20px;
+}
 body{
-  background-color: #9E9BBF;
+  background-color: #F0F0F0;
   font-size: 18px;
   margin: 0;
   padding: 0;
@@ -23,7 +25,7 @@ body{
    grid-column-end: -1;
    grid-row-start: 1;
    grid-row-end: 2;
-  background-color: #9E9BBF;
+  background-color: #F0F0F0;
   text-align: left;
   align-self: center;
 }
@@ -43,7 +45,7 @@ nav a:hover{
   text-decoration: underline;
 }
 .nav .current{
-  color: white;
+border: 2px dashed black;
 }
 header{
   font-size: 38px;
@@ -101,7 +103,6 @@ header h2{
 }
 .travel li{
   font-size: 18px;
-  font-style: oblique;
   text-align: left;
 }
 .travel p{
@@ -116,7 +117,6 @@ header h2{
 }
 .airport li{
   font-size: 18px;
-  font-style: oblique;
   text-align: left;
 }
 .airport p{
@@ -131,7 +131,6 @@ header h2{
 }
 .accomos li{
   font-size: 18px;
-  font-style: oblique;
   text-align: left;
 }
 .accomos p{
@@ -145,7 +144,7 @@ header h2{
   grid-row-end: 8;
 }
 .transpo{
-  font-size: 14px;
+  font-size: 18px;
 }
 footer{
   background-color: black;
@@ -172,7 +171,7 @@ footer{
    grid-column-end: -1;
    grid-row-start: 1;
    grid-row-end: 2;
-  background-color: #9E9BBF;
+  background-color: #F0F0F0;
   text-align: left;
   align-self: center;
 }
@@ -253,11 +252,6 @@ header h2{
 }
 .travel li{
   font-size: 18px;
-  font-style: oblique;
-  text-align: left;
-}
-.travel p{
-  font-size: 14px;
   text-align: left;
 }
 .airport{
@@ -268,13 +262,9 @@ header h2{
 }
 .airport li{
   font-size: 18px;
-  font-style: oblique;
   text-align: left;
 }
-.airport p{
-  font-size: 14px;
-  text-align: left;
-}
+
 .accomos{
   grid-column-start: 2;
   grid-column-end: 4;
@@ -283,11 +273,10 @@ header h2{
 }
 .accomos li{
   font-size: 18px;
-  font-style: oblique;
   text-align: left;
 }
 .accomos p{
-  font-size: 14px;
+  font-size: 18px;
   text-align: left;
 }
 .transpo{
@@ -297,7 +286,7 @@ header h2{
   grid-row-end: 8;
 }
 .transpo{
-  font-size: 14px;
+  font-size: 18px;
 }
 footer{
   background-color: black;
@@ -316,7 +305,7 @@ footer{
      grid-column-end: -1;
      grid-row-start: 1;
      grid-row-end: 2;
-    background-color: #9E9BBF;
+    background-color: #F0F0F0;
     text-align: right;
     align-self: center;
   }
