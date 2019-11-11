@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event RSVP Form</title>
+    <!-- BOOTSTRAP CDNs -->
+
+    <!-- FONT AWESOME -->
+
+    <style>
+
+        .header {
+            color: #36A0FF;
+            font-size: 35px;
+            padding: 0px;
+        }
+        .bigicon {
+            font-size: 45px;
+            color: #36A0FF;
+            padding-left:2%;
+        }
+        form div{
+            display:inline-block;
+            width: 90%;
+        }
+        button.btn{
+            display: block;
+            margin: 0 auto;
+        }
+        footer{
+          background-color: black;
+          color: white;
+          padding-top: 30px;
+          text-align: center;
+          margin-bottom: 0px;
+        }
+        nav{
+          height: 100px;
+        }
+        .nav{
+          display: inline;
+         background-color: #F0F0F0;
+         text-align: left;
+         align-self: center;
+        }
+        nav ul{
+          padding: 45px;
+          list-style-type: none;
+        }
+        nav li{
+          display: inline;
+          padding-right: 20px;
+        }
+        nav a{
+          color: black;
+          font-weight: bold;
+          text-decoration: none;
+        }
+        nav a:hover{
+          text-decoration: underline;
+        }
+        .nav .current{
+        border: 2px dashed black;
+        }
+        header{
+          font-size: 50px;
+          background-color: rgba(255, 255, 255, .8);
+          border: 5px solid black;
+        }
+        header h1{
+          color: black;
+          font-size: 50px;
+          text-align: center;
+          align-self: center;
+          padding: 0px;
+        }
+</style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="schedule.html">Schedule</a></li>
+      <li><a href="travel.html">Travel</a></li>
+      <li><a href="photos.html">Photos</a></li>
+    </ul>
+  </nav>
+  <header>
+    <h1>¡Nos Casamos!</h1>
+  </header>
+<!-- http://www.prepbootstrap.com/bootstrap-template/contact-form -->
+<main>
+<form class="form-horizontal" method="post">
+  <form
+  action="https://formspree.io/mrggpvqy"
+  method="POST"
+>
+    <fieldset>
+        <legend class="text-center header"><h1>RSVP</h1></legend>
+
+        <div class="form-group">
+            <span><i class="fa fa-user bigicon"></i></span>
+            <div>
+                <input id="fname" name="full name" type="text" placeholder="Full Name" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <span><i class="fa fa-paper-plane bigicon"></i></span>
+            <div>
+                <input id="email" name="email" type="text" placeholder="Email Address" class="form-control">
+            </div>
+        </div>
+        <p> Please check off any events that you are interested in. We've included tenative pricing, but that is subject to change depending on group size.
+        <div class="checkbox">
+          <label><input type="checkbox" value="">Wine Tasting in La Rioja (60 euros for transportation and wine tasting)</label>
+        </div>
+        <div class="checkbox">
+          <div class="checkbox">
+            <label><input type="checkbox" value="">Bull Fight in Plaza De Toros (60€ per ticket)</label>
+          </div>
+              <div class="checkbox">
+                <label><input type="checkbox" value="">Tapas & Vino Tour (35€ per person)</label>
+              </div>
+            <div class="checkbox">
+                <label><input type="checkbox" value="">Arabic Baths (Spa) Day (40€ - 120€ depending on treatments)</label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" value="">5 course Lunch at a Michellin Star Restaurant (50€)</label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" value="">Weather Dependent: rooftop pool of the Rafael Hotel (14€ for entry)</label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" value="">Hiking adventure in the mountains of Madrid (10€ per person)</label>
+              </div>
+              <div class="checkbox">
+<br>
+
+        <div class="form-group">
+            <span><i class = "fas fa-pencil-alt bigicon"></i></span>
+            <div>
+                <textarea class="form-control" id="suggestions" name="Suggestions" type="text" placeholder="Any other suggestions or questions?"></textarea>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div>
+                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+            </div>
+        </div>
+    </fieldset>
+</form>
+</main>
+</body>
+<footer> Sara Gladchun & Miguel Ruiz Cuesta's Wedding. May 15, 2020. Madrid, Spain.<br>
+  &copy; Sara Gladchun - 2019</footer>
+  </html>
