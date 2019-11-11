@@ -292,7 +292,10 @@ footer{
 
 
 @media screen and (min-width: 1020px){
-  .nav{
+  .hide{
+      display: inline;
+    }
+    .nav{
      display: inline;
     background-color: #F0F0F0;
     padding-top: 20px;
