@@ -8,12 +8,12 @@
     <!-- FONT AWESOME -->
 
     <style>
+
         .header {
             color: #36A0FF;
             font-size: 35px;
             padding: 0px;
         }
-
         .bigicon {
             font-size: 45px;
             color: #36A0FF;
@@ -23,11 +23,57 @@
             display:inline-block;
             width: 90%;
         }
-        button.btn{             /*Why couldn't I just use button?*/
+        button.btn{
             display: block;
             margin: 0 auto;
         }
-
+        footer{
+          background-color: black;
+          color: white;
+          padding-top: 30px;
+          text-align: center;
+          margin-bottom: 0px;
+        }
+        nav{
+          height: 100px;
+        }
+        .nav{
+          display: inline;
+         background-color: #F0F0F0;
+         text-align: left;
+         align-self: center;
+        }
+        nav ul{
+          padding: 45px;
+          list-style-type: none;
+        }
+        nav li{
+          display: inline;
+          padding-right: 20px;
+        }
+        nav a{
+          color: black;
+          font-weight: bold;
+          text-decoration: none;
+        }
+        nav a:hover{
+          text-decoration: underline;
+        }
+        .nav .current{
+        border: 2px dashed black;
+        }
+        header{
+          font-size: 50px;
+          background-color: rgba(255, 255, 255, .8);
+          border: 5px solid black;
+        }
+        header h1{
+          color: black;
+          font-size: 50px;
+          text-align: center;
+          align-self: center;
+          padding: 0px;
+        }
 </style>
 </head>
 <body>
@@ -39,9 +85,16 @@
       <li><a href="photos.html">Photos</a></li>
     </ul>
   </nav>
+  <header>
+    <h1>¡Nos Casamos!</h1>
+  </header>
 <!-- http://www.prepbootstrap.com/bootstrap-template/contact-form -->
 <main>
 <form class="form-horizontal" method="post">
+  <form
+  action="https://formspree.io/mrggpvqy"
+  method="POST"
+>
     <fieldset>
         <legend class="text-center header"><h1>RSVP</h1></legend>
 
