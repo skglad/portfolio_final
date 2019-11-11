@@ -83,11 +83,11 @@ header h2{
   vertical-align: bottom;
 }
 .welcomephoto{
-  background-attachment: fixed; /* Parallax effect */
-  background-image: url("../images/castle-vinuelas-2.jpg");      /* Your code here - Link to header.jpg in the images folder */
-  background-position: center;  /* Parallax effect */
-  background-repeat: no-repeat; /* Parallax effect */
-  background-size: cover;       /* Parallax effect */
+  background-attachment: fixed;
+  background-image: url("../images/castle-vinuelas-2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 600px;
   border: 5px solid black;
   grid-column-start: 1;
@@ -181,11 +181,11 @@ header{
     align-self: center;
   }
   .welcomephoto{
-    background-attachment: fixed; /* Parallax effect */
-    background-image: url("../images/castle-vinuelas-2.jpg");      /* Your code here - Link to header.jpg in the images folder */
-    background-position: center;  /* Parallax effect */
-    background-repeat: no-repeat; /* Parallax effect */
-    background-size: cover;       /* Parallax effect */
+     background-attachment: fixed;
+    background-image: url("../images/castle-vinuelas-2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     border: 5px solid black;
     grid-column-start: 2;
     grid-column-end: 5;
@@ -259,12 +259,23 @@ header{
       padding: 6px;
       position: absolute;
       top: -40px;
-      -webkit-transition: none; /* Your code here - set to default setting */
-      transition: none; /* Your code here - set to default setting */
+      -webkit-transition: none;
+      transition: none;
       z-index: 1;
     }
 
     .skip a:focus{
       top:0;
+    }
+    .welcomephoto{
+     background-image: url("../images/castle-vinuelas-2.jpg");
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     border: 5px solid black;
+     grid-column-start: 2;
+     grid-column-end: 5;
+     grid-row-start: 3;
+     grid-row-end: 4;
     }
   }
